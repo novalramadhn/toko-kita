@@ -45,7 +45,7 @@ class ProdukController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
         $data = array('title' => 'Foto Produk');
         return view('produk.show', $data);
@@ -57,7 +57,7 @@ class ProdukController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
         $data = array('title' => 'Form Edit Produk');
         return view('produk.edit', $data);

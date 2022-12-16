@@ -44,7 +44,7 @@ class TransaksiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
         $data = array('title' => 'Detail Transaksi');
         return view('transaksi.show', $data);
@@ -56,7 +56,7 @@ class TransaksiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
         $data = array('title' => 'Form Edit Transaksi');
         return view('transaksi.edit', $data);

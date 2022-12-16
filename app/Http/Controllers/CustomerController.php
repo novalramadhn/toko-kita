@@ -55,7 +55,7 @@ class CustomerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
         $data = array('title' => 'Form Edit Customer');
         return view('customer.edit', $data);
